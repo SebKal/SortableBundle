@@ -3,6 +3,7 @@
 
 namespace SK\SortableBundle\Model;
 
+
 final class SortParameter
 {
     const ORDER_ASC = 'asc';

@@ -3,6 +3,7 @@
 
 namespace SK\SortableBundle\Model;
 
+
 use Doctrine\ORM\QueryBuilder;
 
 interface Sortable
