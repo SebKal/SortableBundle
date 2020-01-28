@@ -6,11 +6,6 @@
     "license": "proprietary",
     "require": {
         "php-64bit": "~7.3",
-        "ext-dom": "*",
-        "symfony/http-kernel": "^4.3",
-        "symfony/dependency-injection": "^4.3",
-        "symfony/config": "^4.3",
-        "symfony/debug": "^4.3",
         "twig/twig": "^2.11",
         "doctrine/orm": "^2.7"
     },
