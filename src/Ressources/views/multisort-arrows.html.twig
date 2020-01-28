@@ -1,0 +1,12 @@
+{% set route = route|default(app.request.get('_route')) %}
+<a href="{{ path(route, {'sort' : sorting.singleUrlQuery(column) }) }}">
+    {{ columnLabel }}
+</a>
+<div class="sort-arrows-multiple" data-sort="{{ column }}" data-mode="multiple">
+    <a href="{{ path(route, {'sort' : sorting.urlQuery(column,'asc')}) }}" class="asc{% if sorting.has(column) and sorting.get(column).order == 'asc' %} d-none{% endif %}">
+        {{ source('@icon/arrow-up.svg') }}
+    </a>
+    <a href="{{ path(route, {'sort' : sorting.urlQuery(column,'desc')}) }}" class="desc{% if sorting.has(column) and sorting.get(column).order == 'desc' %} d-none{% endif %}">
+        {{ source('@icon/arrow-down.svg') }}
+    </a>
+</div>

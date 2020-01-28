@@ -1,0 +1,26 @@
+{
+    "name": "sk/sortable-bundle",
+    "type": "library",
+    "description": "Made to implement a sortable behavior",
+    "homepage": "https://diplomeo.com",
+    "license": "proprietary",
+    "require": {
+        "php-64bit": "~7.3",
+        "ext-dom": "*",
+        "symfony/http-kernel": "^4.3",
+        "symfony/dependency-injection": "^4.3",
+        "symfony/config": "^4.3",
+        "symfony/debug": "^4.3",
+        "twig/twig": "^2.11",
+        "doctrine/orm": "^2.7"
+    },
+    "require-dev": {
+        "symfony/debug-bundle": "^3.4",
+        "sensiolabs/security-checker": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SK\\SortableBundle\\": "src/"
+        }
+    }
+}
